@@ -10,23 +10,42 @@ h1 {
   color: #d63384;
 }
 
-#malla {
+.grid-malla {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(10, 1fr);
   gap: 15px;
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: auto;
+  text-align: left;
 }
 
-.ramo {
+.semestre {
+  display: flex;
+  flex-direction: column;
   background-color: #fff0f5;
   border: 2px solid #d63384;
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px;
+}
+
+.semestre h2 {
+  font-size: 16px;
+  color: #d63384;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.ramo {
+  background-color: #fff;
+  border: 2px solid #d63384;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
   cursor: pointer;
   transition: 0.3s;
   user-select: none;
+  font-size: 13px;
 }
 
 .ramo:hover {
